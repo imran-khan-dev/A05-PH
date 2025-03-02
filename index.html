@@ -25,6 +25,7 @@
     <div class="flex items-center">
       <div class="bg-[#F4F7FF] rounded-[32px] px-[17px] py-[16px] flex items-center justify-center mr-[38px]">
         <img class="w-[32px] h-auto" src="fi-sr-checkbox.png" alt="tick">
+        <!-- Total task completed Number -->
         <span class="font-bold text-[32px] ml-4 leading-0">23</span>
       </div>
       <img class="bg-[#F4F7FF] p-3 rounded-full h-auto" src="color-btn.png" alt="color-btn">
@@ -39,12 +40,13 @@
           <img class="bg-white p-[18px] rounded-full mr-[20px]" src="fi-sr-checkbox.png" alt="check">
           <div class="flex flex-col items-start justify-center">
             <span class="text-base font-medium text-[#00303C]">Task Assigned</span>
-            <span class="text-[32px] font-bold">05</span>
+            <span class="text-[32px] font-bold">06</span>
           </div>
 
         </div>
 
-        <div class="flex items-center justify-items-start px-[40px] py-[24px] bg-[#3752FD] rounded-[12px]  mr-6">
+        <div id="discover-btn"
+          class="cursor-pointer flex items-center justify-items-start px-[40px] py-[24px] bg-[#3752FD] rounded-[12px]  mr-6">
           <img src="note-pad.png" alt="note-pad">
           <h2 class="text-2xl font-medium text-white ml-[22px]">Discover Something New Today!</h2>
         </div>
@@ -53,6 +55,7 @@
           <div class="bg-white p-[18px] mr-[20px] rounded-full">
             <img class=" " src="fi-sr-calendar.svg" alt="calender">
           </div>
+          <!-- Current Date -->
           <div class="flex flex-col items-start justify-center">
             <span class="text-[22px] font-medium text-[#00303C]">Wed,</span>
             <span class="text-[22px] font-bold">Jul 28 2025</span>
@@ -157,6 +160,7 @@
           History</button>
       </div>
       <div>
+        <!-- Log Messages -->
         <div>
           <p class="text-base p-[10px] rounded-[8px] bg-[#F4F7FF] mb-[28px]">
             You have Complete The Task Add Dark Mode at 12:48:15 PM
@@ -168,8 +172,7 @@
       </div>
     </div>
   </div>
-
-
+  <script src="script.js"></script>
 </body>
 
 </html>
