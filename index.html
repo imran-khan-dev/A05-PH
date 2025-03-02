@@ -1,17 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="Logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevBoard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="src/style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-[#F4F7FF] pt-6">
@@ -62,116 +57,132 @@
         </div>
       </div>
 
+      <!-- Task Cards -->
       <div class="grid grid-cols-3 gap-[36px]">
-        <div class="bg-[#F4F7FF] rounded-[16px] p-6">
-          <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">ShopEase</span>
-          <h2 class="mt-4 font-medium text-2xl mb-4">Fix Mobile Button Issue</h2>
-          <p class="text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">Debug using Chrome DevTools, check
-            for overlapping elements, and ensure onClick works properly</p>
+        <div class="task-card bg-[#F4F7FF] rounded-[16px] p-6">
+          <span class="project-name text-base text-[#00303C] bg-white rounded-[8px] p-2">ShopEase</span>
+          <h2 class="task-title mt-4 font-medium text-2xl mb-4">Fix Mobile Button Issue</h2>
+          <p class="task-desc text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+          </p>
           <div class="flex items-center justify-between">
             <div class="flex flex-col items-start justify-center">
               <span class="text-sm text-[#00303C]">Deadline</span>
-              <span class="text-[#00303C] font-medium text-base">21 March 2025</span>
+              <span class="task-deadline text-[#00303C] font-medium text-base">21 March 2025</span>
             </div>
-            <button class="text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">Completed</button>
+            <button class="complete-btn text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">
+              Completed
+            </button>
           </div>
         </div>
 
-        <div class="bg-[#F4F7FF] rounded-[16px] p-6">
-          <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">CloudSync</span>
-          <h2 class="mt-4 font-medium text-2xl mb-4">Add Dark Mode</h2>
-          <p class="text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">Debug using Chrome DevTools, check
-            for overlapping elements, and ensure onClick works properly</p>
+        <div class="task-card bg-[#F4F7FF] rounded-[16px] p-6">
+          <span class="project-name text-base text-[#00303C] bg-white rounded-[8px] p-2">CloudSync</span>
+          <h2 class="task-title mt-4 font-medium text-2xl mb-4">Add Dark Mode</h2>
+          <p class="task-desc text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">
+            Implement dark mode toggle using Tailwind and localStorage
+          </p>
           <div class="flex items-center justify-between">
             <div class="flex flex-col items-start justify-center">
               <span class="text-sm text-[#00303C]">Deadline</span>
-              <span class="text-[#00303C] font-medium text-base"> 1 April 2025</span>
+              <span class="task-deadline text-[#00303C] font-medium text-base">1 April 2025</span>
             </div>
-            <button class="text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">Completed</button>
+            <button class="complete-btn text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">
+              Completed
+            </button>
           </div>
         </div>
 
-        <div class="bg-[#F4F7FF] rounded-[16px] p-6">
-          <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">SwiftPay</span>
-          <h2 class="mt-4 font-medium text-2xl mb-4">Optimize Home Page</h2>
-          <p class="text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">Debug using Chrome DevTools, check
-            for overlapping elements, and ensure onClick works properly</p>
+        <div class="task-card bg-[#F4F7FF] rounded-[16px] p-6">
+          <span class="project-name text-base text-[#00303C] bg-white rounded-[8px] p-2">SwiftPay</span>
+          <h2 class="task-title mt-4 font-medium text-2xl mb-4">Optimize Home Page</h2>
+          <p class="task-desc text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">
+            Improve load time by optimizing images and removing unused CSS
+          </p>
           <div class="flex items-center justify-between">
             <div class="flex flex-col items-start justify-center">
               <span class="text-sm text-[#00303C]">Deadline</span>
-              <span class="text-[#00303C] font-medium text-base"> 28 March 2025</span>
+              <span class="task-deadline text-[#00303C] font-medium text-base">28 March 2025</span>
             </div>
-            <button class="text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">Completed</button>
+            <button class="complete-btn text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">
+              Completed
+            </button>
           </div>
         </div>
 
-        <div class="bg-[#F4F7FF] rounded-[16px] p-6">
-          <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">Meta</span>
-          <h2 class="mt-4 font-medium text-2xl mb-4">Add New Emoji</h2>
-          <p class="text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">Debug using Chrome DevTools, check
-            for overlapping elements, and ensure onClick works properly</p>
+        <div class="task-card bg-[#F4F7FF] rounded-[16px] p-6">
+          <span class="project-name text-base text-[#00303C] bg-white rounded-[8px] p-2">Meta</span>
+          <h2 class="task-title mt-4 font-medium text-2xl mb-4">Add New Emoji</h2>
+          <p class="task-desc text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">
+            Design and integrate new emojis for messaging system
+          </p>
           <div class="flex items-center justify-between">
             <div class="flex flex-col items-start justify-center">
               <span class="text-sm text-[#00303C]">Deadline</span>
-              <span class="text-[#00303C] font-medium text-base">11 April 2025</span>
+              <span class="task-deadline text-[#00303C] font-medium text-base">11 April 2025</span>
             </div>
-            <button class="text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">Completed</button>
+            <button class="complete-btn text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">
+              Completed
+            </button>
           </div>
         </div>
 
-        <div class="bg-[#F4F7FF] rounded-[16px] p-6">
-          <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">Google LLC</span>
-          <h2 class="mt-4 font-medium text-2xl mb-4">Integrate OpenAI API</h2>
-          <p class="text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">Debug using Chrome DevTools, check
-            for overlapping elements, and ensure onClick works properly</p>
+        <div class="task-card bg-[#F4F7FF] rounded-[16px] p-6">
+          <span class="project-name text-base text-[#00303C] bg-white rounded-[8px] p-2">Google LLC</span>
+          <h2 class="task-title mt-4 font-medium text-2xl mb-4">Integrate OpenAI API</h2>
+          <p class="task-desc text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">
+            Connect OpenAI API for chatbot functionality
+          </p>
           <div class="flex items-center justify-between">
             <div class="flex flex-col items-start justify-center">
               <span class="text-sm text-[#00303C]">Deadline</span>
-              <span class="text-[#00303C] font-medium text-base">15 April 2025</span>
+              <span class="task-deadline text-[#00303C] font-medium text-base">15 April 2025</span>
             </div>
-            <button class="text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">Completed</button>
+            <button class="complete-btn text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">
+              Completed
+            </button>
           </div>
         </div>
 
-        <div class="bg-[#F4F7FF] rounded-[16px] p-6">
-          <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">Glassdoor</span>
-          <h2 class="mt-4 font-medium text-2xl mb-4">Improve Job Searching</h2>
-          <p class="text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">Debug using Chrome DevTools, check
-            for overlapping elements, and ensure onClick works properly</p>
+        <div class="task-card bg-[#F4F7FF] rounded-[16px] p-6">
+          <span class="project-name text-base text-[#00303C] bg-white rounded-[8px] p-2">Glassdoor</span>
+          <h2 class="task-title mt-4 font-medium text-2xl mb-4">Improve Job Searching</h2>
+          <p class="task-desc text-base text-gray-500 p-4 bg-white rounded-[8px] mb-[27px]">
+            Enhance job search filters and optimize query results
+          </p>
           <div class="flex items-center justify-between">
             <div class="flex flex-col items-start justify-center">
               <span class="text-sm text-[#00303C]">Deadline</span>
-              <span class="text-[#00303C] font-medium text-base">19 April 2025</span>
+              <span class="task-deadline text-[#00303C] font-medium text-base">19 April 2025</span>
             </div>
-            <button class="text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">Completed</button>
+            <button class="complete-btn text-base text-white bg-[#3752FD] py-[10px] px-[20px] rounded-[8px]">
+              Completed
+            </button>
           </div>
         </div>
       </div>
+
+
     </div>
 
+    <!-- Activity Log -->
     <div class="px-[31px] w-[366px] py-[25px] h-[918px] bg-white rounded-2xl">
       <div class="flex items-center justify-center flex-col mb-[40px]">
-        <div class="flex items-center justify-center  mb-[15px]">
+        <div class="flex items-center justify-center mb-[15px]">
           <img src="log-icon.svg" alt="log-icon">
           <p class="font-medium text-xl ml-[17px]">Activity Log</p>
         </div>
-        <button class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px] font-medium text-base text-white">Clear
-          History</button>
+        <button id="clear-history"
+          class="px-[20px] py-[10px] bg-[#3752FD] rounded-[8px] font-medium text-base text-white">Clear History</button>
       </div>
-      <div>
+      <div class="activity-log">
         <!-- Log Messages -->
-        <div>
-          <p class="text-base p-[10px] rounded-[8px] bg-[#F4F7FF] mb-[28px]">
-            You have Complete The Task Add Dark Mode at 12:48:15 PM
-          </p>
-          <p class="text-base p-[10px] rounded-[8px] bg-[#F4F7FF]">
-            You have Complete The Task Add Dark Mode at 12:48:15 PM
-          </p>
-        </div>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+
+  <script src="script.js">
+  </script>
 </body>
 
 </html>
