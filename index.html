@@ -25,10 +25,11 @@
     <div class="flex items-center">
       <div class="bg-[#F4F7FF] rounded-[32px] px-[17px] py-[16px] flex items-center justify-center mr-[38px]">
         <img class="w-[32px] h-auto" src="fi-sr-checkbox.png" alt="tick">
-        <!-- Total task completed Number -->
-        <span class="font-bold text-[32px] ml-4 leading-0">23</span>
+        <span class="font-bold text-[32px] ml-4 leading-0 total-completed-count">23</span>
       </div>
-      <img class="bg-[#F4F7FF] p-3 rounded-full h-auto" src="color-btn.png" alt="color-btn">
+      <!-- Color Btn -->
+      <img id="color-btn" class="bg-[#F4F7FF] p-3 rounded-full h-auto cursor-pointer" src="color-btn.png"
+        alt="color-btn">
     </div>
   </div>
 
@@ -40,29 +41,27 @@
           <img class="bg-white p-[18px] rounded-full mr-[20px]" src="fi-sr-checkbox.png" alt="check">
           <div class="flex flex-col items-start justify-center">
             <span class="text-base font-medium text-[#00303C]">Task Assigned</span>
-            <span class="text-[32px] font-bold">06</span>
+            <span class="text-[32px] font-bold task-assigned-count">06</span>
           </div>
-
         </div>
 
         <div id="discover-btn"
-          class="cursor-pointer flex items-center justify-items-start px-[40px] py-[24px] bg-[#3752FD] rounded-[12px]  mr-6">
+          class="flex items-center justify-items-start px-[40px] py-[24px] bg-[#3752FD] rounded-[12px] mr-6 cursor-pointer">
           <img src="note-pad.png" alt="note-pad">
           <h2 class="text-2xl font-medium text-white ml-[22px]">Discover Something New Today!</h2>
         </div>
 
         <div class="flex items-center justify-center w-[263px] h-[128px] bg-[#F4F7FF] p-[32px] rounded-[12px]">
           <div class="bg-white p-[18px] mr-[20px] rounded-full">
-            <img class=" " src="fi-sr-calendar.svg" alt="calender">
+            <img class=" " src="fi-sr-calendar.svg" alt="calendar">
           </div>
-          <!-- Current Date -->
           <div class="flex flex-col items-start justify-center">
-            <span class="text-[22px] font-medium text-[#00303C]">Wed,</span>
-            <span class="text-[22px] font-bold">Jul 28 2025</span>
+            <span class="text-[22px] font-medium text-[#00303C]">Today:</span>
+            <span class="text-[22px] font-bold current-date"></span>
           </div>
-
         </div>
       </div>
+
       <div class="grid grid-cols-3 gap-[36px]">
         <div class="bg-[#F4F7FF] rounded-[16px] p-6">
           <span class="text-base text-[#00303C] bg-white rounded-[8px] p-2">ShopEase</span>
